@@ -1,27 +1,27 @@
-# caddy-dns-acmedns
-Caddy Web Server with ACME-DNS Provider
+# caddy-docker-custom
+Caddy Web Server with a series of additional modules (see **Modules**).
 
-[![Docker Build and Publish](https://github.com/timelordx/caddy-dns-acmedns/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/timelordx/caddy-dns-acmedns/actions/workflows/docker-publish.yml)
-
-**DockerHub:** [timelordx/caddy-dns-acmedns](https://hub.docker.com/r/timelordx/caddy-dns-acmedns)
+[![Docker Build and Publish](https://github.com/cyruz-git/caddy-docker-custom/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/cyruz-git/caddy-docker-custom/actions/workflows/docker-publish.yml)
 
 **Docker Pull Command**
 
 * from GitHub Container Registry: 
 
 ```
-docker pull ghcr.io/timelordx/caddy-dns-acmedns:latest
-```
-* from Docker Hub:
-
-```
-docker pull timelordx/caddy-dns-acmedns:latest
+docker pull ghcr.io/cyruz-git/caddy-docker-custom:latest
 ```
 
-**Documentation**
+**Caddy Docs**
 
 * [Caddy Docker](https://hub.docker.com/_/caddy)
 * [Caddy Server](https://caddyserver.com/docs/)
-* [ACME-DNS module for Caddy Server](https://github.com/caddy-dns/acmedns)
-* [NameCheap with ACME-DNS Provider](https://caddy.community/t/namecheap-with-acme-dns-provider/18944)
-* [Synology Certificate Deployer](https://github.com/timelordx/synology-cert-deploy)
+
+**Modules**
+
+* [http.handlers.webdav](https://github.com/mholt/caddy-webdav)
+* [http.ip_sources.cloudflare](https://github.com/WeidiDeng/caddy-cloudflare-ip)
+* [dns.providers.cloudflare](https://github.com/caddy-dns/cloudflare)
+* [security](https://github.com/greenpau/caddy-security)
+* [http.handlers.crowdsec](https://github.com/hslatman/caddy-crowdsec-bouncer)
+* [http.matchers.fail2ban](https://github.com/Javex/caddy-fail2ban)
+* [http.matchers.maxmind_geolocation](https://github.com/porech/caddy-maxmind-geolocation)
