@@ -22,6 +22,7 @@ docker pull ghcr.io/cyruz-git/caddy-docker-custom:latest
 * [http.ip_sources.cloudflare](https://github.com/WeidiDeng/caddy-cloudflare-ip)
 * [dns.providers.cloudflare](https://github.com/caddy-dns/cloudflare)
 * [security](https://github.com/greenpau/caddy-security)
+* [http.authentication.providers.jwt](https://github.com/ggicci/caddy-jwt)
 * [http.handlers.crowdsec](https://github.com/hslatman/caddy-crowdsec-bouncer)
 * [http.matchers.fail2ban](https://github.com/Javex/caddy-fail2ban)
 * [http.matchers.maxmind_geolocation](https://github.com/porech/caddy-maxmind-geolocation)
